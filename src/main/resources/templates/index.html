@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Lista de APIs Disponibles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .api-link {
+            margin: 10px 0;
+        }
+        .bold-large {
+            font-size: 1.5em; /* Cambia el tamaño del texto */
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<h1>Lista de API's disponibles</h1>
-</br>
-<p><strong>Documentación de la API OPERACIONES: </strong> <a th:href="@{http://10.0.1.112:8686/api/cavapy/operaciones/swagger-cavapy.html}" target="_blank">10.0.1.112:8686/api/cavapy/operaciones/swagger-cavapy.html</a> </p>
+<div class="container">
+    <h1>Lista de APIs Disponibles</h1>
+    <div class="api-link">
+        <p><span class="bold-large">Documentación de la API OPERACIONES:</span> <a th:href="@{http://10.0.1.112:8686/api/cavapy/operaciones/swagger-cavapy.html}" target="_blank">http://10.0.1.112:8686/api/cavapy/operaciones/swagger-cavapy.html</a></p>
+    </div>
+    <div class="api-link">
+        <p><span class="bold-large">Documentación de la API FINANZAS:</span> <a th:href="@{http://10.0.1.112:8888/api/cavapy/finanzas/swagger-cavapy.html}" target="_blank">http://10.0.1.112:8686/api/cavapy/finanzas/swagger-cavapy.html</a></p>
+    </div>
+    <div class="api-link">
+        <p><span class="bold-large">Documentación de la API CUSTODIA:</span> <a th:href="@{http://10.0.1.112:8989/api/cavapy/custodia/swagger-cavapy.html}" target="_blank">http://10.0.1.112:8686/api/cavapy/custodia/swagger-cavapy.html</a></p>
+    </div>
+</div>
 </body>
 </html>
